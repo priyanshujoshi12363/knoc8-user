@@ -1,5 +1,6 @@
 import { Baloo_2, Nunito } from "next/font/google";
 import "./globals.css";
+import type { ReactNode } from "react";
 
 const display = Baloo_2({ subsets: ["latin"], weight: ["600", "800"], variable: "--font-display" });
 const body = Nunito({ subsets: ["latin"], weight: ["400", "600", "800"], variable: "--font-body" });
@@ -9,7 +10,7 @@ export const metadata = {
   description: "Hold a button, say what you need, and Knoc8 does it on your Windows PC. Coming soon.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={`${display.variable} ${body.variable}`}>{children}</body>
