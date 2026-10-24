@@ -120,8 +120,7 @@ const CHIPS: Chip[] = [
   [Sun, "Brightness"], [AppWindow, "Windows"], [Clipboard, "Clipboard"], [Code, "Claude Code"], [Bell, "Notifications"],
   [Mouse, "Mouse"], [Music, "Spotify"],
 ];
-
-const HOW: Chip & [] extends never ? never : [LucideIcon, string, string][] = [
+const HOW: [LucideIcon, string, string][] = [
   [Mic, "Hold the button", "Press it, speak, let go. It only hears you while your finger is down."],
   [Sparkles, "It cleans and listens", "Your voice is tidied up and turned into text right on your PC."],
   [Brain, "It makes a plan", "A smart model works out the steps, in order, in plain language."],
